@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Sohne';
+    src: url('Sohne-BuchKursiv.woff2') format('woff2'),
+        url('Sohne-BuchKursiv.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('Sohne-Halbfett.woff2') format('woff2'),
+        url('Sohne-Halbfett.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('Sohne-HalbfettKursiv.woff2') format('woff2'),
+        url('Sohne-HalbfettKursiv.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('Sohne-Buch.woff2') format('woff2'),
+        url('Sohne-Buch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
