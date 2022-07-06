@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $("#info").click(function() {
+    $("#main-text-wrapper").addClass("view");
+  });
+
   $("#button-1").click(function() {
     $("#about").toggle();
   });
@@ -39,5 +43,21 @@ $(document).ready(function() {
   
   $("div.progress").css("height", progress + "%");
      })
+
+let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+const mouseDownHandler = function (e) {
+    pos = {
+        // The current scroll
+        left: ele.scrollLeft,
+        top: ele.scrollTop,
+        // Get the current mouse position
+        x: e.clientX,
+        y: e.clientY,
+    };
+
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
+};
   
 });
