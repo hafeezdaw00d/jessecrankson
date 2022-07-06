@@ -210,6 +210,21 @@ li:hover {
 	overflow-y: auto;
  } 
 
+.image-wrapper a {
+	font-size: 3.5em;
+	color: black;
+	text-decoration: none;
+}
+
+.image-wrapper video:hover {
+	box-shadow: 0px 0px 10px 10px fuchsia;
+}
+
+.image-wrapper a:hover {
+	text-shadow: 0px 0px 10px fuchsia;
+	color: fuchsia;
+}
+
 /* Images */
 .image-wrapper img {
 	max-width: 100%;
