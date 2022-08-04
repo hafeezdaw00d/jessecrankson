@@ -260,8 +260,14 @@ img:hover {
 
 }
 
-.image-wrapper a {
-	font-size: 3.5em;
+#map {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 200px;
+	height: 200px;
+	z-index: 200;
+	border: 1px solid;
 }
 
 .image-wrapper img {
