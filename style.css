@@ -257,7 +257,7 @@ a:hover {
 }
 /* Responsive */
 
-@media screen and (max-width: 43rem) {
+@media screen and (max-width: 768px) {
 
 	p, a {
 	font-family: Sohne, sans-serif;
