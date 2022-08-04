@@ -323,8 +323,6 @@ a:hover {
 
 	.right-col {
 		max-width: 100vw;
-		animation-name: loader;
-		animation-duration: 2s;
 	}
 	
 	.header {
