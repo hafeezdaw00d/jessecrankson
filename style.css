@@ -179,7 +179,7 @@ li:hover {
 	position: fixed;
 	z-index: -1000;
 	top: 0;
-	background-color: black;
+	background-color: white;
 	animation-name: init;
 	animation-duration: 2s;
 	justify-content: center;
@@ -188,7 +188,6 @@ li:hover {
 
 .init-container {
 	height: auto;
-	color: white;
 	mix-blend-mode: initial;
 	align-self: center;
 }
