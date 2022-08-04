@@ -323,6 +323,10 @@ a:hover {
 	.right-col {
 		max-width: 100vw;
 	}
+
+	#main-text-wrapper {
+		mix-blend-mode: difference;
+	}
 	
 	.header {
 		width: 98%;
