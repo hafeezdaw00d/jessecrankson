@@ -94,7 +94,12 @@ body {
 }
 
 img {
+	/*padding: 20px;*/
+}
 
+video {
+	overflow: hidden;
+	padding: 20px;
 }
 
 ul {
@@ -169,7 +174,7 @@ li:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	animation-name: text-loader;
-	animation-duration: 4s;
+	animation-duration: 1.5s;
 }
 
 .init {
@@ -222,6 +227,10 @@ li:hover {
 	grid-row-gap: 10px; */
 	background-color: lightgrey;
 	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+  display: none;
+}
  } 
 
 .image-wrapper a {
@@ -278,15 +287,16 @@ a:hover {
 .footer {
 	position: fixed;
 	bottom: 5px;
-	left: 0px;
+	left: 5%;
 	width: 20%;
 	text-align: justify;
 	animation-name: text-loader;
-	animation-duration: 4s;
+	animation-duration: 1.5s;
 }
 
 .footer p {
-	/*font-size: 12px;*/
+	font-size: 1rem;
+	line-height: 1rem;
 }
 /* Responsive */
 

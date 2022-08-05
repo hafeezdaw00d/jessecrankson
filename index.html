@@ -5,14 +5,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>JCJCJCJCJCJCJCJCJCJCJCJC</title>
 		<meta name="description" content="...">
-		<link rel="preload" href="assets/fonts/Sohne-Fett" as="font" crossorigin>
+		<link rel="preload" href="assets/fonts/Sohne-Fett.woff" as="font" crossorigin>
 		<link rel="preload" href="assets/fonts/Sohne-Fett.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" type="text/css" href="magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="photoswipe.css">
 		<link rel="icon" href="assets/favicon.png">
 		<!-- <script type="text/javascript" src="js/animations.js"></script> -->
 		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+		<script type="module">
+		import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.js';
+		const lightbox = new PhotoSwipeLightbox({
+		  gallery: '#main-gallery',
+		  children: 'a',
+		  showHideAnimationType: 'zoom',
+		  pswpModule: () => import('/js/photoswipe.esm.js'),
+		  bgOpacity: 1,
+		  padding: { top: 40, bottom: 40, left: 40, right: 40 }
+
+		});
+		lightbox.init();
+		</script>
 	</head>
 	<body>
 		<div class="init">
@@ -46,108 +58,196 @@
 					<a>Photographs</a>
 					<a>Video</a>
 				</div> -->
-				<div class="image-table">
-					<div class="image-wrapper" >
-						<img src="assets/images/jc-14.jpg" href="assets/images/jc-14.jpg">
+				<div class="image-table pswp-gallery pswp-gallery--single-column" id="main-gallery">
+					<div class="image-wrapper">
+						<a href="assets/images/jc-14.jpg" data-pswp-width="1008" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+    						<img src="assets/images/jc-14.jpg">
+    					</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
-						<img src="assets/images/jc-2.jpg" href="assets/images/jc-2.jpg">
+						<a href="assets/images/jc-2.jpg" data-pswp-width="1500" 
+    					data-pswp-height="1144" 
+    					target="_blank">
+							<img src="assets/images/jc-2.jpg">
+					</a>
 					</div>
 					<div class="image-wrapper">
-						<img src="assets/images/jc-3.jpg" href="assets/images/jc-3.jpg">
-					</div>
-					<div class="image-wrapper">
-						<span></span>
-						<span></span>
-						<img src="assets/images/jc-4.jpg" href="assets/images/jc-4.jpg">
-					</div>
-					<div class="image-wrapper">
-						<span></span>
-						<span></span>
-						<img src="assets/images/jc-65.jpg">
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-5.jpg">
-					</div>
-					<div class="image-wrapper">
-						<span></span>
-						<img src="assets/images/jc-6.jpg">
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-7.jpg">
-					</div>
-					<div class="image-wrapper">
-						<span></span>
-						<img src="assets/images/jc-8.jpg">
+						<a href="assets/images/jc-3.jpg" data-pswp-width="1218" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-3.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
 						<span></span>
-						<img src="assets/images/jc-9.jpg">
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-10.jpg"> 
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-11.jpg">
-					</div>
-					<div class="image-wrapper">
-						<span></span>
-						<img src="assets/images/jc-13.jpg">
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-15.jpg">
-						<span></span>
-						<a href="https://www.youtube.com/watch?v=hXKspwkEA0w">Video for Beabadoobee &#8212 "Susie May"</a>
-					</div>
-					<div class="image-wrapper">
-						<img src="assets/images/jc-16.jpg">
+						<a href="assets/images/jc-4.jpg" data-pswp-width="1217" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-4.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
 						<span></span>
-						<img src="assets/images/jc-17.jpg">
+						<a href="assets/images/jc-65.jpg" data-pswp-width="1500" 
+    					data-pswp-height="1205" 
+    					target="_blank">
+							<img src="assets/images/jc-65.jpg">
+						</a>
+					</div>
+					<<!-- div class="image-wrapper">
+						<a href="assets/images/jc-5.jpg" data-pswp-width="979" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-5.jpg">
+					</div> -->
+					<div class="image-wrapper">
+						<span></span>
+						<a href="assets/images/jc-6.jpg" data-pswp-width="993" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-6.jpg">
+						</a>
+					</div>
+					<!-- <div class="image-wrapper">
+						<a href="assets/images/jc-7.jpg" data-pswp-width="1500" 
+    					data-pswp-height="976" 
+    					target="_blank">
+						<img src="assets/images/jc-7.jpg" href="assets/images/jc-7.jpg">
+					</div> -->
+					<div class="image-wrapper">
+						<span></span>
+						<a href="assets/images/jc-8.jpg" data-pswp-width="1118" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-8.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
+						<span></span>
+						<span></span>
+						<a href="assets/images/jc-9.jpg" data-pswp-width="1200" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-9.jpg">
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<a href="assets/images/jc-10.jpg" data-pswp-width="1200" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-10.jpg"> 
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<a href="assets/images/jc-11.jpg" data-pswp-width="1200" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-11.jpg">
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<span></span>
+						<a href="assets/images/jc-13.jpg" data-pswp-width="1500" 
+    					data-pswp-height="1008" 
+    					target="_blank">
+							<img src="assets/images/jc-13.jpg">
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<a href="assets/images/jc-15.jpg" data-pswp-width="1008" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-15.jpg">
+						</a>
+						<span></span>
+						<!-- <a href="https://www.youtube.com/watch?v=hXKspwkEA0w">Video for Beabadoobee &#8212 "Susie May"</a> -->
+					</div>
+					<div class="image-wrapper">
+						<a href="assets/images/jc-16.jpg" data-pswp-width="1008" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-16.jpg">
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<span></span>
+						<span></span>
+						<a href="assets/images/jc-17.jpg" data-pswp-width="1194" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-17.jpg">
+						</a>
+					</div>
+					<div class="image-wrapper">
+						<a href="assets/images/jc-18.jpg" data-pswp-width="1214" 
+    					data-pswp-height="1500" 
+    					target="_blank">
 						<img src="assets/images/jc-18.jpg">
+					</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
-						<img src="assets/images/jc-19.jpg">
+						<a href="assets/images/jc-19.jpg" data-pswp-width="1500" 
+    					data-pswp-height="1198" 
+    					target="_blank">
+							<img src="assets/images/jc-19.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
-						<img src="assets/images/jc-20.jpg">
+						<a href="assets/images/jc-20.jpg" data-pswp-width="1184" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-20.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
-						<img src="assets/images/jc-21.jpg">
+						<a href="assets/images/jc-21.jpg" data-pswp-width="1189" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-21.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
-						<span></span>
-						<span></span>
-						<video width="100%" height="auto" autoplay muted loop href="assets/vid/Indust_Snippet_03.mp4" playsinline>
-						  <source src="assets/vid/Indust_Snippet_03.mp4" type="video/mp4" loading="lazy">>
+						<video width="300%" height="auto" autoplay muted loop href="assets/vid/Indust_Snippet_03.mp4" playsinline>
+						  <source src="assets/vid/Indust_Snippet_03.mp4" type="video/mp4" loading="lazy">
 						Your browser does not support the video tag.
 						</video>
 					</div>
 					<div class="image-wrapper">
-						<img src="assets/images/jc-22.jpg">
+						<a href="assets/images/jc-22.jpg" data-pswp-width="1182" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-22.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
-						<video width="100%" height="auto" autoplay muted loop playsinline>
+						<video width="320%" height="auto" autoplay muted loop playsinline>
 						  <source src="assets/vid/Indust_Snippet_07.mp4" type="video/mp4" loading="lazy">
 						Your browser does not support the video tag.
 						</video>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
-						<img src="assets/images/jc-23.jpg">
+						<a href="assets/images/jc-23.jpg" data-pswp-width="1200" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-23.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
 						<span></span>
 						<span></span>
-						<img src="assets/images/jc-24.jpg">
+						<a href="assets/images/jc-21.jpg" data-pswp-width="1210" 
+    					data-pswp-height="1500" 
+    					target="_blank">
+							<img src="assets/images/jc-24.jpg">
+						</a>
 					</div>
 					<div class="image-wrapper">
 						<img src="assets/images/jc-25.jpg">
