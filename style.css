@@ -92,7 +92,8 @@ body {
 }
 
 img {
-
+	width: 100%;
+	height: auto;
 }
 
 video {
@@ -220,13 +221,18 @@ li:hover {
 }
  } 
 
-.image-wrapper a {
+.image-wrapper p {
 	font-size: 3.5rem;
 	line-height: 3.5rem;
 	letter-spacing: -0.18rem;
 	color: black;
 	text-decoration: none;
 }
+
+.image-wrapper p:hover {
+
+}
+
 
 .image-wrapper video {
 	cursor: pointer;
@@ -344,7 +350,7 @@ a:hover {
 		grid-gap: 5%;
 	}
 
-	.image-wrapper a {
+	.image-wrapper p {
 		font-size: 6rem;
 		line-height: 6rem;
 		letter-spacing: -0.05em;
