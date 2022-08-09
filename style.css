@@ -222,11 +222,13 @@ li:hover {
  } 
 
 .image-wrapper p {
+	display: inline-block;
 	font-size: 3.5rem;
 	line-height: 3.5rem;
 	letter-spacing: -0.18rem;
 	color: black;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .image-wrapper p:hover {
@@ -244,6 +246,11 @@ li:hover {
 }
 
 a:hover {
+	text-shadow: 0px 0px 10px var(--main-text-color);
+	color: var(--main-text-color);
+}
+
+.image-wrapper p:hover {
 	text-shadow: 0px 0px 10px var(--main-text-color);
 	color: var(--main-text-color);
 }
