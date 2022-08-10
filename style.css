@@ -55,7 +55,7 @@
 }
 
 :root {
-  --main-text-color: greenyellow;
+  --main-text-color: #006EB3;
 }
 
 html {
@@ -132,11 +132,19 @@ li:hover {
 }
 
 #main-text-wrapper {
-	top: 25%;
+	top: 15%;
 	width: 19.8%;
 	position: fixed;
 	z-index: 50;
 	display: none;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+#main-text-wrapper p {
+	font-size: 3rem;
+	line-height: 3rem;
+	letter-spacing: -0.15rem;
 }
 
 #main-text-wrapper:hover {
@@ -153,7 +161,7 @@ li:hover {
 
 .left-col {
 	background-color: white;
-	border-right: 1px solid black;
+	/*border-right: 1px solid black;*/
 } 
 
 .left-col:hover {
@@ -205,7 +213,7 @@ li:hover {
 	top: 20%;
 }
  #info:hover {
- 	text-shadow: 0px 0px 5px var(--main-text-color);
+ 	/*text-shadow: 0px 0px 5px var(--main-text-color);*/
  	color: var(--main-text-color);
  	cursor: pointer;
  	background-color: black;
@@ -237,6 +245,11 @@ li:hover {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+
+}
+
+.image-wrapper p:hover {
+ 	color: var(--main-text-color);
 }
 
 #popup {
@@ -255,10 +268,7 @@ li:hover {
 	width: auto;
 }
 
-.image-wrapper p:hover {
-	text-shadow: 0px 0px 5px var(--main-text-color);
- 	color: var(--main-text-color);
-}
+
 
 
 .image-wrapper video {
@@ -271,12 +281,12 @@ li:hover {
 }
 
 a:hover {
-	text-shadow: 0px 0px 10px var(--main-text-color);
+	/*text-shadow: 0px 0px 10px var(--main-text-color);*/
 	color: var(--main-text-color);
 }
 
 .image-wrapper p:hover {
-	text-shadow: 0px 0px 10px var(--main-text-color);
+	/*text-shadow: 0px 0px 10px var(--main-text-color);*/
 	color: var(--main-text-color);
 }
 
@@ -332,8 +342,8 @@ a:hover {
 		font-family: Sohne, sans-serif;
 		font-weight: bold;
 		color: white;
-		font-size: 6rem;
-		line-height: 6rem;
+		font-size: 5.5rem;
+		line-height: 5.5rem;
 		letter-spacing: -0.05em;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
