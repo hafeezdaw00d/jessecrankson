@@ -405,8 +405,8 @@ div.pswp__img--placeholder,
 	font-weight: bold;
   height: 30px;
   margin: 20px 0 0 20px;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 22px;
+  line-height: normal;
   letter-spacing: -0.05em;
   color: var(--pswp-icon-color);
   /*text-shadow: 1px 1px 3px var(--pswp-icon-color-secondary);*/
@@ -415,9 +415,9 @@ div.pswp__img--placeholder,
 
 @media only screen and (min-width: 200px) and (max-width: 768px)  {
 		.pswp__counter {
-		  margin: 25px 0 0 35px;
-		  font-size: 5rem;
-		  line-height: 5rem;
+		  margin: 20px 0 0 35px;
+		  font-size: 20px
+		  /*line-height: 5rem;*/
 		  letter-spacing: -0.05em;
 }
 

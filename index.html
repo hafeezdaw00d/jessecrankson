@@ -22,7 +22,7 @@
 		  showHideAnimationType: 'zoom',
 		  pswpModule: () => import('/js/photoswipe.esm.js'),
 		  bgOpacity: 1,
-		  padding: { top: 40, bottom: 40, left: 40, right: 40 }
+		  padding: { top: 80, bottom: 80, left: 80, right: 80 }
 
 		});
 		lightbox.init();
@@ -34,10 +34,13 @@
 				<p>JCJCJCJCJCJCJCJCJC</p>
 			</div>
 		</div>
+		<div id="popup">
+			<img width="1040" height="1590" src="assets/images/jc-hover-test.png">
+		</div>
 		<div class="main-wrapper">
 			<div class="left-col">
 				<header class="header">
-					<p>Jesse Crankson</p>
+					<p id="secret">Jesse Crankson</p>
 					<a id="info">Info</a>
 				</header>
 				<div id="main-text-wrapper">
@@ -566,6 +569,14 @@
  
 				$("#info").click(function() {
 			 		$("#main-text-wrapper").toggle("slow");
+				});
+
+				$("#secret").click(function() {
+			 		$("#popup").toggle();
+				});
+
+				$("#popup").click(function() {
+			 		$("#popup").toggle();
 				});
 
 				$("#video-1").click(function() {
