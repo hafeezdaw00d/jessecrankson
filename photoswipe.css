@@ -363,7 +363,7 @@ div.pswp__img--placeholder,
 }
 
 .pswp--zoom-allowed .pswp__button--zoom {
-  display: block;
+  display: none;
 }
 
 /* "+" => "-" */
@@ -404,7 +404,7 @@ div.pswp__img--placeholder,
 	font-family: Sohne, Arial, sans-serif;
 	font-weight: bold;
   height: 30px;
-  margin: 20px 0 0 20px;
+  margin: 18px 0 0 20px;
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.05em;

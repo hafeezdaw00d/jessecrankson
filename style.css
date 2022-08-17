@@ -53,6 +53,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Sohne';
+    src: url('assets/fonts/Sohne-FettKursiv.woff2') format('woff2'),
+        url('assets/fonts/Sohne-FettKursiv.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 :root {
   --main-text-color: #006EB3;
@@ -71,12 +79,13 @@ p, a {
 	font-weight: bold;
 	font-size: 1.5rem;
 	line-height: 1.5rem;
-	letter-spacing: -0.05rem;
+	letter-spacing: -0.08rem;
 	margin-block-start: 0em;
 	margin-block-end: 0em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	text-align: justify;
+	word-wrap: break-word;
 }
 
 /* Main */
@@ -133,96 +142,125 @@ li:hover {
 
 #main-text-wrapper {
 	top: 15%;
-	width: 19.8%;
+	width: 19.9%;
 	position: fixed;
-	z-index: 50;
+	z-index: 1;
 	display: none;
 	font-size: 3rem;
 	line-height: 3rem;
 }
 
 #main-text-wrapper p {
-	font-size: 3rem;
-	line-height: 3rem;
+	font-size: 2.6rem;
+	line-height: 2.4rem;
 	letter-spacing: -0.15rem;
 }
 
-#main-text-wrapper:hover {
-	background-image: url(assets/images/bg-jc-1.jpg);
-
+#popup {
+	display: none;
+	width: 20%;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+	object-fit: contain;
+	background-image: url(assets/images/jc-hover-test-2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(1);
+	mix-blend-mode: difference;
 }
 
-#secret:hover {
-	text-shadow: 0px 0px 5px var(--main-text-color);
+#popup img {
+	height: 100vh;
+	width: auto;
+}
+
+ #info:hover {
+ 	/*text-shadow: 0px 0px 5px var(--main-text-color);*/
  	color: var(--main-text-color);
  	cursor: pointer;
- 	background-color: black;
+ }
+
+#secret:hover {
+/*	text-shadow: 0px 0px 5px var(--main-text-color);*/
+ 	color: var(--main-text-color);
+ 	cursor: pointer;
 }
 
 .left-col {
 	background-color: white;
 	/*border-right: 1px solid black;*/
-} 
-
-.left-col:hover {
-	/*background-image: url(assets/images/bg-jc-1.jpg);
-	background-size: contain;*/
-} 
+}
 
 .right-col {
 	max-width: 90vw;
 }
 
+#mail {
+	font-size: 1.97rem;
+	line-height: 1.9rem;
+	letter-spacing: -0.08rem;
+}
+
 .header {
 	position: fixed;
 	display: flex;
-	width: 19.8%;
+	width: 19.9%;
 	flex-direction: row;
 	justify-content: space-between;
 	animation-name: text-loader;
-	animation-duration: 1.5s;
+	animation-duration: 2.5s;
+	z-index: 1;
 }
 
 .init {
-	display: flex;
+	display: block;
 	width: 100%;
 	height: 100vh;
 	position: fixed;
 	z-index: -1000;
 	top: 0;
 	background-color: white;
-	animation-name: init;
-	animation-duration: 1s;
+	animation: init 2s 1, flash 0.2s 5;
+	justify-content: center;
+	align-content: center;
+	background-color: black;
+	background-image: url(assets/images/jc-hover-test-3.png);
+	background-size: 200%;
+}
+
+.init-container {
+	display: flex;
 	justify-content: center;
 	align-content: center;
 }
 
-.init-container {
+.init p {
+	width: 100vw;
+	font-style: italic;
 	height: auto;
-	align-self: center;
+	font-size: 7rem;
+	line-height: 5.2rem;
 }
 
-.init p {
-	font-size: 10rem;
-	line-height: 10rem;
-	color: black;
+.init img {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	mix-blend-mode: darken;
+	animation: image 1s 1, loader 0.25s 4;
 }
 
 .nav {
 	position: fixed;
 	top: 20%;
 }
- #info:hover {
- 	/*text-shadow: 0px 0px 5px var(--main-text-color);*/
- 	color: var(--main-text-color);
- 	cursor: pointer;
- 	background-color: black;
- }
 
 .image-table {
 	display: grid;
 	grid-gap: 20px;
 	object-fit: fill;
+	animation: text-loader 2.5s 1;
 }
 
 .image-wrapper { 
@@ -235,6 +273,7 @@ li:hover {
 	&::-webkit-scrollbar {
   		display: none;
 }
+
  } 
 
 .image-wrapper p {
@@ -251,25 +290,6 @@ li:hover {
 .image-wrapper p:hover {
  	color: var(--main-text-color);
 }
-
-#popup {
-	display: none;
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	z-index: 10000;
-	object-fit: contain;
-	filter: invert(1);
-	mix-blend-mode: difference;
-}
-
-#popup img {
-	height: 100vh;
-	width: auto;
-}
-
-
-
 
 .image-wrapper video {
 	cursor: pointer;
@@ -322,8 +342,8 @@ a:hover {
 .footer {
 	position: fixed;
 	bottom: 0px;
-	left: 5%;
-	width: 20%;
+	left: 15%;
+	width: 5rem;
 	text-align: justify;
 	animation-name: text-loader;
 	animation-duration: 1.5s;
@@ -356,9 +376,11 @@ a:hover {
 		border: 0px solid black;
 	}
 
-	#popup img {
-		height: auto;
+	#popup {
+		height: 150vh;
 		width: 100vw;
+		background-size: contain;
+		background-position: center;
 	}
 
 	.main-wrapper {
@@ -381,8 +403,7 @@ a:hover {
 	}
 	
 	.header {
-		width: 45%;
-		flex-direction: column;
+		width: 60%;
 		mix-blend-mode: difference;
 		animation-name: text-loader;
 		animation-duration: 2s;
@@ -410,8 +431,6 @@ a:hover {
 		margin-left: -10%;
 	}
 
-
-
 	.footer p {
 		font-size: 3rem;
 		line-height: 3rem;
@@ -419,20 +438,7 @@ a:hover {
 	}
 }
 
-
-
 /* Animations */
-
-@keyframes loader {
-
-	from {
-	    filter: blur(10px);
-	    transform: scale(20);
-	    /*grid-template-columns: 100% 0%; */
-	    /*transform: scale(1.5);*/
-	}
-
-}
 
 @keyframes text-loader {
 
@@ -450,6 +456,40 @@ a:hover {
 
 }
 
+@keyframes loader {
+
+	from {
+	    opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
+}
+
+@keyframes flash {
+
+	from {
+		filter: invert(1);
+	}
+
+	to {
+		filter: invert(0);
+	}
+}
+
+@keyframes scale {
+
+	from {
+		transform: scale(2);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
 @keyframes init {
 
 	from {
@@ -457,7 +497,7 @@ a:hover {
 	    z-index: 100000;
 	}
 
-	95% {
+	90% {
 		opacity: 1;
 	}
 
