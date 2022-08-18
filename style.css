@@ -96,6 +96,7 @@ p, a {
 	margin-inline-end: 0px;
 	text-align: justify;
 	word-wrap: break-word;
+	text-justify: inter-word;
 }
 
 /* Main */
@@ -236,6 +237,7 @@ li:hover {
 	background-color: black;
 	background-image: url(assets/images/jc-hover-test-3.png);
 	background-size: 100%;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -394,7 +396,7 @@ a:hover {
 		grid-template-rows: auto;
 		animation-name: none;
 	}
-	
+
 	.right-col {
 		max-width: 100vw;
 	}
@@ -424,6 +426,13 @@ a:hover {
 
 	.init {
 		background-size: cover;
+	}
+
+	.init-container p {
+	/*	font-size: 12rem;
+		line-height: 12rem;*/
+		/*filter: invert(1);*/
+
 	}
 
 	.image-table {
