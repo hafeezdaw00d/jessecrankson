@@ -103,7 +103,6 @@ p, a {
 
 body {
 	margin: 0;
-	font-size: 1vw;
 }
 
 ::selection {
@@ -224,45 +223,61 @@ li:hover {
 	z-index: 1;
 }
 
+.init-image {
+	position: fixed;
+	z-index: -9;
+	width: 400vw;
+	height: 100vh;
+	animation: init 2s 1, mover 2s 1;
+	background-size: cover;
+	background-color: black;
+	background-position: top;
+	background-repeat: no-repeat;
+	mix-blend-mode: darken;
+	transition: all ease-out 200ms;
+}
+
+.init-image img {
+	padding-left: 20%;
+	height: 150vh;
+	width: auto;
+}
+
 .init {
 	display: block;
-	width: 100%;
+	width: 800vw;
 	height: 100vh;
 	position: fixed;
-	z-index: -1000;
 	top: 0;
-	animation: init 2s 1, flash 0.2s 5;
+	z-index: -10;
+	animation: init 2s 1, mover 2s 1;
 	justify-content: center;
 	align-content: center;
-	background-color: black;
-	background-image: url(assets/images/jc-hover-test-3.png);
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-color: white;
+	transition: all ease-in-out 200ms;
 }
 
 .init-container {
-	display: flex;
-	justify-content: center;
+	display: block;
+	justify-content: left;
 	align-content: center;
 }
 
 .init p {
-	width: 100vw;
 	font-weight: 800;
 	font-style: italic;
 	height: auto;
-	font-size: 6.4rem;
-	line-height: 4.8rem;
+	font-size: 4.4rem;
+	line-height: 3.8rem;
 }
 
-.init img {
+/*.init img {
 	position: absolute;
 	top: 0;
 	height: 100%;
 	mix-blend-mode: darken;
 	animation: image 1s 1, loader 0.25s 4;
-}
+}*/
 
 .nav {
 	position: fixed;
@@ -424,20 +439,29 @@ a:hover {
 		/*margin: 0 1px;*/
 	}
 
-	.init {
-		background-size: cover;
+	.init-image {
+		animation: init 2s 1, mover-mobile 2s 1, loader 0.25s 6;
+
 	}
+
+	.init-image img {
+		
+
+	}
+
 
 	.init-container p {
 	/*	font-size: 12rem;
 		line-height: 12rem;*/
 		/*filter: invert(1);*/
+		filter: invert(1);
 
 	}
 
 	.image-table {
 		margin-top: 50px;
 	}
+
 
 	.image-wrapper {
 		grid-gap: 5%;
@@ -481,6 +505,17 @@ a:hover {
 
 }
 
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 @keyframes loader {
 
 	from {
@@ -493,14 +528,40 @@ a:hover {
 
 }
 
+@keyframes mover {
+	from {
+		transform: translateX(0);
+		
+	}
+
+	to {
+		transform: translateX(-200vw);
+
+	}
+}
+
+@keyframes mover-mobile {
+	from {
+		transform: translateX(0);
+		
+	}
+
+	to {
+		transform: translateX(-600vw);
+
+	}
+}
+
 @keyframes flash {
 
 	from {
 		filter: invert(1);
+		
 	}
 
 	to {
 		filter: invert(0);
+
 	}
 }
 
