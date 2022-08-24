@@ -226,6 +226,7 @@ p {
 	color: black;
 	font-size: inherit;
 	line-height: inherit;
+	text-align: justify !important;
 }
 
 #mail:hover {
@@ -541,10 +542,10 @@ a:hover {
 
 	#mail {
 		position: absolute;
-		left: 32.8%;
-		font-size: 4rem;
-		line-height: 3.8rem;
-		margin-top: 30vh;
+		/*left: 32.8%;*/
+		font-size: 9.9rem;
+		line-height: 9.9rem;
+		margin-top: 62vh;
 		color: white;
 	}
 
