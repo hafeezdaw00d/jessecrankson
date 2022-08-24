@@ -252,8 +252,8 @@
 						</a>
 					</div>
 					<div class="image-wrapper">
-						<video width="100%" height="auto" autoplay muted loop playsinline>
-						  <source src="assets/vid/Indust_Snippet_07.mp4" type="video/mp4">
+						<video id="link-1" width="100%" height="auto" autoplay muted loop playsinline>
+						  <source src="https://ik.imagekit.io/ljqwnqnom/Indust_Snippet_07_VxnRHIZLK.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1660004097648" type="video/mp4">
 						Your browser does not support the video tag.
 						</video>
 					</div>
@@ -603,19 +603,19 @@
 			 		$("#popup").toggle();
 				});
 
-			    $("#main-text-wrapper").hover(function(){ 
-			        mouse_is_inside=true; 
-			    }, function(){ 
-			        mouse_is_inside=false; 
-			    });
+			 //    $("#main-text-wrapper").hover(function(){ 
+			 //        mouse_is_inside=true; 
+			 //    }, function(){ 
+			 //        mouse_is_inside=false; 
+			 //    });
 
-			    if (window.matchMedia('(max-width: 768px)').matches)
-				{
-				    $("body").mouseup(function(){ 
-				        if(! mouse_is_inside ) $("#main-text-wrapper").hide();
-				    });
+			 //    if (window.matchMedia('(max-width: 768px)').matches)
+				// {
+				//     $("body").mouseup(function(){ 
+				//         if(!mouse_is_inside) $("#main-text-wrapper").hide();
+				//     });
 
-				}
+				// }
 
 				$("#video-1").click(function() {
 			 		Object.assign(document.createElement("a"), {
