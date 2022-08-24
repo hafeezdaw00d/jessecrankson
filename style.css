@@ -259,10 +259,8 @@ p {
 	
 }
 
-.load-ani p {
+#textme {
 	justify-self: center;
-	font-size: 3rem;
-	line-height: 2.8rem;
 	align-self: center;
 	z-index: 1000;
 	color: white;
@@ -274,7 +272,7 @@ p {
 }
 
 #load-1 {
-width: auto;
+	width: auto;
 	height: 100vh;
 	position: absolute;
   	top: 0;
@@ -543,12 +541,15 @@ a:hover {
 	#mail {
 		position: absolute;
 		/*left: 32.8%;*/
-		font-size: 9.9rem;
-		line-height: 9.9rem;
-		margin-top: 150%;
+		font-size: 4rem;
+		line-height: 3.8rem;
+		margin-top: 60%;
 		color: white;
 	}
 
+	#textme {
+		width: 60vw !important;
+	}
 	
 	.header {
 		width: 60%;
