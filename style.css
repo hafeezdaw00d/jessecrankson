@@ -224,7 +224,8 @@ p {
 
 #mail {
 	color: black;
-/*	letter-spacing: -0.08rem;*/
+	font-size: inherit;
+	line-height: inherit;
 }
 
 #mail:hover {
@@ -541,8 +542,8 @@ a:hover {
 	#mail {
 		position: absolute;
 		left: 32.8%;
-		font-size: inherit;
-		line-height: inherit;
+		font-size: 4rem;
+		line-height: 3.8rem;
 		margin-top: 30vh;
 		color: white;
 	}
