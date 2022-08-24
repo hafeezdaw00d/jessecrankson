@@ -28,7 +28,7 @@
 	</head>
 	<body>
 		<div class="load-ani">
-			<p>Jesse Crankson<br>© 2022 &#8212 Now<br>All rights reserved</p>
+			<p>© 2022 &#8212 Now<br>Jesse Crankson<br>All rights reserved</p>
 		</div>
 		<div id="popup">
 		</div>
@@ -43,7 +43,7 @@
 
 					<p>Clients include:
 					MCQ, Numero, Perfect, Wonderland, The Fall, Crack, Clash, UMG, Warner, Bureau Future, Dirty Hit Records<br><br><br></p>
-
+					<!-- <p>E-mail: </p> -->
 					<a href="mailto:jc@jessecrankson.com" id="mail">jc@jessecrankson.com</a>
 				</div>
 			</div>
@@ -600,6 +600,20 @@
 				$("#popup").click(function() {
 			 		$("#popup").toggle();
 				});
+
+			    $("#main-text-wrapper").hover(function(){ 
+			        mouse_is_inside=true; 
+			    }, function(){ 
+			        mouse_is_inside=false; 
+			    });
+
+			    if (window.matchMedia('(max-width: 768px)').matches)
+				{
+				    $("body").mouseup(function(){ 
+				        if(! mouse_is_inside ) $("#main-text-wrapper").hide();
+				    });
+
+				}
 
 				$("#video-1").click(function() {
 			 		Object.assign(document.createElement("a"), {
