@@ -541,8 +541,8 @@ a:hover {
 	#mail {
 		position: absolute;
 		left: 32.8%;
-		font-size: 4rem;
-		line-height: 3.8rem;
+		font-size: inherit;
+		line-height: inherit;
 		margin-top: 30vh;
 		color: white;
 	}
