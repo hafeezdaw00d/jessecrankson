@@ -183,7 +183,7 @@ p {
 	width: 20%;
 	height: 100vh;
 	position: fixed;
-	z-index: 5;
+	z-index: 2;
 	object-fit: contain;
 	background-image: url(assets/images/jc-hover-test-2.png);
 	background-repeat: no-repeat;
@@ -252,7 +252,7 @@ p {
 	position: fixed;
 	top: 0;
 	z-index: -1;
-	animation: init 2.5s 1;
+	animation: init 2.5s 1 cubic-bezier(0.33, 1, 0.68, 1) 200ms;
 	background-color: black;
 	justify-content: center;
 	align-content: center;
@@ -391,7 +391,7 @@ p {
 	display: grid;
 	grid-gap: 20px;
 	object-fit: fill;
-	animation: text-loader 2.5s 1;
+	animation: text-loader 2.5s 1 cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .image-wrapper { 
