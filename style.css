@@ -597,6 +597,10 @@ a:hover {
 		line-height: 3rem;
 		text-align: justify;
 	}
+
+	#secret {
+		text-align: left;
+	}
 }
 
 /* Animations */
