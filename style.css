@@ -106,7 +106,7 @@ a {
 	margin-inline-end: 0px;
 	text-align: justify;
 	word-wrap: break-word;
-	text-align-last: justify;
+	/*text-align-last: justify;*/
 	text-decoration: none;
 }
 
