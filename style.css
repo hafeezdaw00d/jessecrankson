@@ -599,7 +599,7 @@ a:hover {
 	}
 
 	#secret {
-		text-align: left;
+		text-align-last: left;
 	}
 }
 
