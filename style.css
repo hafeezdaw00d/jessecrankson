@@ -598,7 +598,7 @@ a:hover {
 		text-align: justify;
 	}
 
-	#secret {
+	header p {
 		text-align-last: left;
 	}
 }
