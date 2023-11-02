@@ -13,9 +13,9 @@
   /* defined via js:
   --pswp-transition-duration: 333ms; */
   
-  --pswp-icon-color: #fff;
-  --pswp-icon-color-secondary: #fff;
-  --pswp-icon-stroke-color: #fff;
+  --pswp-icon-color: #000;
+  --pswp-icon-color-secondary: #000;
+  --pswp-icon-stroke-color: #000;
   --pswp-icon-stroke-width: 1px;
 
   --pswp-error-text-color: var(--pswp-icon-color);
@@ -133,6 +133,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  /* display: none !important; */
 }
 
 .pswp__item {
@@ -207,6 +208,7 @@ and show (for example fade in) when PhotoSwipe is opened
 	border: 0;
 	box-shadow: none;
 	opacity: 1;
+  appearance: none;
 	-webkit-appearance: none;
 	-webkit-touch-callout: none;
 }
@@ -401,8 +403,9 @@ div.pswp__img--placeholder,
 }
 
 .pswp__counter {
-	font-family: Sohne, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
+  display: none;
   height: 30px;
   margin: 18px 0 0 20px;
   font-size: 22px;
@@ -410,17 +413,18 @@ div.pswp__img--placeholder,
   letter-spacing: -0.05em;
   color: var(--pswp-icon-color);
   /*text-shadow: 1px 1px 3px var(--pswp-icon-color-secondary);*/
-  opacity: 1;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 768px)  {
 		.pswp__counter {
 		  margin: 20px 0 0 35px;
-		  font-size: 20px
-		  /*line-height: 5rem;*/
+		  font-size: 20px;
+		  line-height: 5rem;
 		  letter-spacing: -0.05em;
 }
 
 .pswp--one-slide .pswp__counter {
   display: none;
+}
 }
