@@ -94,7 +94,8 @@ html {
 /* Typography */
 
 p, 
-a {
+a, 
+small {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-size: 1.3rem;
@@ -108,6 +109,29 @@ a {
 	word-wrap: break-word;
 	/*text-align-last: justify;*/
 	text-decoration: none;
+}
+
+#main-text-wrapper 
+p {
+	font-size: 2.6rem;
+	line-height: 2.2rem;
+	/*letter-spacing: -0.15rem;*/
+}
+
+#main-text-wrapper a {
+	color: black;
+	display: block;
+	font-size: 2.6rem;
+	line-height: 2.2rem;
+	text-align: justify !important;
+}
+
+#portfolio {
+	margin-top: 40rem;
+}
+
+.margin {
+	margin-bottom: 24rem;
 }
 
 /* Main */
@@ -171,13 +195,6 @@ li:hover {
 	line-height: 3rem;
 }
 
-#main-text-wrapper 
-p {
-	font-size: 2.6rem;
-	line-height: 2.4rem;
-	/*letter-spacing: -0.15rem;*/
-}
-
 #popup {
 	display: none;
 	width: 20%;
@@ -222,14 +239,7 @@ p {
 	max-width: 90vw;
 }
 
-#mail {
-	color: black;
-	font-size: 2.6rem;
-	line-height: 2.4rem;
-	text-align: justify !important;
-}
-
-#mail:hover {
+#main-text-wrapper a:hover {
 	color: var(--main-text-color);
 }
 
@@ -473,8 +483,8 @@ a:hover {
 .footer {
 	position: fixed;
 	bottom: 0px;
-	left: 15%;
-	width: 5rem;
+	left: 16%;
+	width: 6rem;
 	text-align: justify;
 	animation: text-loader 2.5s 1;
 }
@@ -488,8 +498,8 @@ a:hover {
 
 @media only screen and (min-width: 200px) and (max-width: 768px)  {
 
-	p, a {
-		color: white;
+	p, a, small {
+		color: white !important;
 		font-size: 5rem;
 		line-height: 5rem;
 		margin-block-start: 0em;
@@ -532,6 +542,11 @@ a:hover {
 	}
 
 	#main-text-wrapper p {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+	#main-text-wrapper a {
 		font-size: 5rem;
 		line-height: 5rem;
 	}
@@ -588,7 +603,7 @@ a:hover {
 	.footer {
 		width: 25%;
 		mix-blend-mode: difference;
-		left: 45%;
+		left: 50.5%;
 		margin-left: -10%;
 	}
 
