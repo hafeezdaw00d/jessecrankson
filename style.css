@@ -498,8 +498,8 @@ a:hover {
 .footer {
 	position: fixed;
 	bottom: 0px;
-	left: 16%;
-	width: 6rem;
+	left: 0;
+	width: auto;
 	text-align: justify;
 	animation: text-loader 2.5s 1;
 }
